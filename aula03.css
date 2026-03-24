@@ -19,12 +19,12 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(255, 0, 234, 0.6)
+    box-shadow: 0 20px 60px rgba(255, 0, 234, 0.6);
 }
 
 .carrossel-slides{
     display: flex;
-    width: 30%;
+    width: 300%;
     height: 100%;
     animation: slide 15s infinite;
 }
@@ -45,10 +45,10 @@ body{
     background: linear-gradient(45deg, #ff6b6b, #feca57);
 }
 .slide:nth-child(2){
-    background: linear-gradient(45deg, #5f27cd, #48dbfb)
+    background: linear-gradient(45deg, #5f27cd, #48dbfb);
 }
 .slide:nth-child(3){
-    background: linear-gradient(45deg, #1dd1a1,#10ac84)
+    background: linear-gradient(45deg, #1dd1a1,#10ac84);
 }
 
 @keyframes slide{
@@ -78,8 +78,9 @@ body{
     .indicator {
         width: 12px;
         height: 12px;
-        border-radius: 50%;
         background:rgba( 255, 255, 255, 0.5);
+           border-radius: 50%;
+           cursor: pointer;
     }
     
     
@@ -92,3 +93,65 @@ body{
     .indicator:nth-child(3){
         animation-delay: 10s;
     }
+
+    @keyframes indicator2 { 
+
+        0%, 30%, 100%{
+            background: rgba(255,255,255, 0.5);
+        }
+        33%, 63%{
+            background:  rgba(255,255,255, 1.0);
+        }
+        66%, 96%{
+            background: rgba( 255, 255, 255, 0.5);
+        }
+    }
+
+    .indicator:nth-child(2){
+        animation: indicator3 15s infinite;
+    }
+    .indicator:nth-child(3){
+        animation: indicator3 15s infinite;
+    }
+
+      @keyframes indicator { 
+
+        0%, 30%, 100%{
+            background: rgba(255,255,255, 0.5);
+        }
+        33%, 63%{
+            background: white;
+        }
+        66%, 96%{
+            background: rgba( 255, 255, 255, 0.5);
+        }
+    }
+
+    .indicator:nth-child(2){
+        animation: indicator3 15s infinite;
+    }
+    .indicator:nth-child(3){
+        animation: indicator3 15s infinite;
+    }
+
+      @keyframes indicator3 { 
+
+        0%, 30%, 100%{
+            background: rgba(255,255,255, 0.5);
+        }
+        33%, 63%{
+            background:  white;
+        }
+        66%, 96%{
+            background: rgba( 255, 255, 255, 0.5);
+        }
+    }
+
+    .indicator:nth-child(2){
+        animation: indicator3 15s infinite;
+    }
+    .indicator:nth-child(3){
+        animation: indicator3 15s infinite;
+    }
+
+
