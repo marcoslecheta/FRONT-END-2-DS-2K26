@@ -97,3 +97,35 @@ body{
     flex-direction: column;
     gap: 15px;
 }
+
+.content-box h2{
+    font-size: 20px;
+    color: #38bdf8;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+}
+
+/*  Mini caixas internas (Grid flexivel) */
+.inner-boxes{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.mini-box{
+    flex: 1;
+    min-width: 80px;
+    padding: 15px;
+    background: #0f172a;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #f43f5e;
+    border: 1px dashed #f43f5e;
+}
+
+@media (max-width: 900px){
+    .dashboard-container{
+        flex-direction: column;
+    }
+}
