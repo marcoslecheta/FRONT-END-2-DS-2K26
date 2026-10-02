@@ -52,3 +52,48 @@ body{
     flex-direction: column;
     gap: 20;
 }
+
+/*  SECAO DE ESTATISTICAS (CAIXAS EM LINHA) */
+
+.stats-row{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box{
+    flex:1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stat-box h3{ font-size: 14px; opacity: 0.8; text-transform: uppercase;}
+.stat-box p{ font-size: 26px; font-weight: bold;}
+
+.stat-1 { background: linear-gradient(135deg, #3b82f6, #1d4ed8);}
+.stat-2 { background: linear-gradient(135deg, #10b981, #047857);}
+.stat-3 { background: linear-gradient(135deg, #f59e0b, #b4530d);}
+
+.grid-row{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.content-box{
+    flex: 1;
+    min-width: 200px;
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
